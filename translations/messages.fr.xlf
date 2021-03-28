@@ -1045,7 +1045,7 @@
       </trans-unit>
       <trans-unit id="label.orderDate">
         <source>label.orderDate</source>
-        <target>Date de commande</target>
+        <target>Date de convention d'honoraire</target>
       </trans-unit>
       <trans-unit id="label.mark_as_exported">
         <source>label.mark_as_exported</source>
