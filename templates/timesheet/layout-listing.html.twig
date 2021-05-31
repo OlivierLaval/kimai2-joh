@@ -30,6 +30,7 @@
     'project': {'class': 'hidden-xs hidden-sm hidden-md'},
     'activity': {'class': 'hidden-xs hidden-sm'},
     'description': {'class': 'hidden-xs hidden-sm'},
+    'exported': {'class': 'hidden-xs hidden-sm'},
 }) %}
 {% if canSeeUsername %}
     {% set columns = columns|merge({
@@ -148,6 +149,9 @@
                     {% else %}
                         {{ entry.description|nl2br }}
                     {% endif %}
+                </td>
+                <td class="{{ tables.data_table_column_class(tableName, columns, 'exported') }}">
+                    {{ widgets.label_exported(entry.exported) }}
                 </td>
 
                 {% if canSeeUsername %}

@@ -44,6 +44,10 @@
     {{ _self.label_boolean(visible) }}
 {% endmacro %}
 
+{% macro label_exported(exported) %}
+    {{ _self.label_boolean(exported) }}
+{% endmacro %}
+
 {% macro label_role(role) %}
     {% set color = 'primary' %}
     {% if role == 'ROLE_SUPER_ADMIN' %}
