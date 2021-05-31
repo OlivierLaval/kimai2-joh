@@ -4,6 +4,7 @@
 
 .idea/
 .DS_Store
+.project
 
 # for symfony local webserver
 php.ini
@@ -17,6 +18,7 @@ php.ini
 /config/bundles-local.php
 
 public/avatars/*.png
+public/build/*
 
 templates/invoice/renderer/.~lock*
 translations/branding.en.xlf
