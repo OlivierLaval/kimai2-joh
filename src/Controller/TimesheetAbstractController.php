@@ -171,6 +171,8 @@ abstract class TimesheetAbstractController extends AbstractController
     {
         $entry = $this->service->createNewTimesheet($this->getUser());
 
+        $entry->setHourlyRate($this->getUser()->getPreferenceValue('hourly_rate'));
+
         if ($request->query->get('project')) {
             $project = $projectRepository->find($request->query->get('project'));
             $entry->setProject($project);
