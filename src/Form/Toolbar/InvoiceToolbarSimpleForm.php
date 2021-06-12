@@ -33,6 +33,7 @@ class InvoiceToolbarSimpleForm extends AbstractToolbarForm
         $builder->add('markAsExported', CheckboxType::class, [
             'label' => 'label.mark_as_exported',
             'required' => false,
+            'data' => true,
         ]);
         $builder->add('create', SubmitType::class, [
             'label' => 'action.save',
