@@ -45,6 +45,14 @@ class DateTimeFactory
         return $date;
     }
 
+    public function getOneYearAgo(): DateTime
+    {
+        $date = $this->createDateTime('1 year ago');
+        $date->setTime(0, 0, 0);
+
+        return $date;
+    }
+
     public function getStartOfWeek(?DateTime $date = null): DateTime
     {
         if (null === $date) {

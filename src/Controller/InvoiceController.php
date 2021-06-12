@@ -139,7 +139,8 @@ final class InvoiceController extends AbstractController
     protected function getDefaultQuery(): InvoiceQuery
     {
         $factory = $this->getDateTimeFactory();
-        $begin = $factory->getStartOfMonth();
+        $begin = $factory->getOneYearAgo();
+
         $end = $factory->getEndOfMonth();
 
         $query = new InvoiceQuery();
